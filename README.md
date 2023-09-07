@@ -6,3 +6,5 @@ Bruk lenkene nedenfor for å se hvordan de ferdige nettsidene ser ut.
 
 - [35-dyr](https://stalegjelsten.github.io/IT1/35-dyr)
 - [35-timeplan](https://stalegjelsten.github.io/IT1/35-timeplan)
+- [36-css](https://stalegjelsten.github.io/IT1/36-css)
+- [36-css-bilder](https://stalegjelsten.github.io/IT1/36-css-bilder)
