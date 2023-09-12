@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test av before og after</title>
+    <style>
+        blockquote::before {
+            content: "«";
+        }
+        blockquote::after {
+            content: "»";
+        }
+        blockquote + p {
+            font-style: italic;
+        }
+        blockquote + p::before {
+            content: "— ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Tester pseudoselektorer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia minus ex esse consequatur assumenda necessitatibus! Magnam facilis placeat magni maxime tempore eos fuga nesciunt quos illo aut. Iusto, tempora.</p>
+    <blockquote>Si vis pacem, para bellum.</blockquote>
+    <p>Vestigius</p>
+</body>
+</html>
