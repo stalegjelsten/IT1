@@ -10,20 +10,14 @@
             content: "«";
         }
         blockquote::after {
-            content: "»";
-        }
-        blockquote + p {
+            content: "»<br /> — " attr(name);
             font-style: italic;
-        }
-        blockquote + p::before {
-            content: "— ";
         }
     </style>
 </head>
 <body>
     <h1>Tester pseudoselektorer</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia minus ex esse consequatur assumenda necessitatibus! Magnam facilis placeat magni maxime tempore eos fuga nesciunt quos illo aut. Iusto, tempora.</p>
-    <blockquote>Si vis pacem, para bellum.</blockquote>
-    <p>Vestigius</p>
+    <blockquote name="Vestigius">Si vis pacem, para bellum.</blockquote>
 </body>
 </html>
