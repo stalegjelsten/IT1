@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sang</title>
+    <style>
+        .refreng::before {
+            content: "Ref.: ";
+            font-weight: 800;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="vers">Dette avsnittet har klassen <code>vers</code>. Det vil altså ikke påvirkes av punktselektoren
+        <code>.refreng</code>.</p>
+
+    <p class="refreng">Dette avsnittet har klassen <code>refreng</code>. Det vil altså påvirkes av punktselektoren
+        <code>.refreng</code></p>
+    <p class="vers">Nå er du nesten voksen, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolorem
+        blanditiis quo quae neque recusandae distinctio at cumque facere libero error nostrum illum quasi magnam nobis
+        adipisci rerum, earum maxime?</p>
+
+    <p class="refreng">Her kommer det et nytt refreng. Refrenget mitt er flott Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ratione necessitatibus porro neque architecto sequi nostrum illo sint nemo aperiam quae,
+        repudiandae temporibus atque! Sint error ducimus enim ea consectetur accusamus?</p>
+
+    <p>For å få legge til tekst før hvert avsnitt så har jeg brukt følgende CSS-kode:</p>
+    <pre><code>
+        .refreng::before {
+            content: "Ref.: ";
+            font-weight: 800;
+        }
+    </code></pre>
+
+</body>
+
+</html>

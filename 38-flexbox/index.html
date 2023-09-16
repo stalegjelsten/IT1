@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test av flexbox</title>
+    <style>
+      html {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url(Crew_7_Nebula_Seeley-1.jpg);
+        background-size: cover;
+        background-position: center center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      #container {
+        margin: auto;
+        max-width: 50rem;
+      }
+      nav > ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 1rem;
+        border: 1px solid red;
+        padding: 0;
+        flex-wrap: wrap;
+      }
+      nav > ul > li {
+        background-color: rgba(29, 139, 194, 0.533);
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+      nav > ul > li:hover {
+        transform: scale(110%);
+        transition-duration: 0.3s;
+      }
+      a {
+        color: white;
+      }
+      li > a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <ul>
+          <li><a href="#">Hjem</a></li>
+          <li><a href="#">Tjenester</a></li>
+          <li><a href="#">Om oss</a></li>
+        </ul>
+      </nav>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          cupiditate consequuntur minus itaque beatae nesciunt odio nulla,
+          soluta doloremque officiis eos laudantium obcaecati. Temporibus
+          blanditiis reprehenderit esse eveniet aliquid iure?
+        </p>
+        <p>
+          Omnis, mollitia corporis praesentium, rerum deleniti excepturi
+          repellendus sapiente quisquam sunt quae, commodi quibusdam modi? Atque
+          ipsum nihil reiciendis voluptatibus dignissimos excepturi fuga, maxime
+          provident iusto, commodi veniam doloremque minus?
+        </p>
+        <p>
+          Rem illum consectetur debitis. Similique eligendi ut assumenda, eum
+          quod, vitae deserunt molestiae totam consequuntur quidem corporis
+          reprehenderit laudantium laborum? Explicabo numquam beatae quas.
+          Placeat libero minus delectus. Animi, hic?
+        </p>
+        <p>
+          Quas, excepturi. Dolores nostrum quis numquam corrupti magni totam
+          error iure unde ducimus. Magni accusantium itaque voluptatibus
+          cupiditate sint labore laboriosam neque, aut illum doloribus quasi
+          quia ipsam eos obcaecati.
+        </p>
+        <p>
+          Atque quis voluptatibus optio enim illum eos dicta nostrum adipisci
+          tempore ullam consectetur totam blanditiis perspiciatis laborum modi
+          voluptatem repellendus dolorum, nam vitae numquam. Tenetur sapiente
+          natus cupiditate commodi possimus.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
