@@ -1,6 +1,6 @@
-# Test av pseudoklasser
+# Test av pseudoselektorer
 
-På [denne nettsiden](pseudoklasse-sitatblokk.html) tester jeg pseudoklassen `::after` i en sitatblokk (`blockqote`).
+På [denne nettsiden](pseudoselektor-sitatblokk.html) tester jeg pseudoselektoren `::after` i en sitatblokk (`blockqote`).
 
 Jeg har gitt sitatblokken en selvvalg attributt i HTML-koden: `name`. `name` er navnet på personen som har opphavet til sitatet.
 

@@ -8,4 +8,4 @@ Bruk lenkene nedenfor for å se hvordan de ferdige nettsidene ser ut.
 - [35-timeplan](https://stalegjelsten.github.io/IT1/35-timeplan)
 - [36-css](https://stalegjelsten.github.io/IT1/36-css)
 - [36-css-bilder](https://stalegjelsten.github.io/IT1/36-css-bilder)
-- [36-css-pseudoklasser](https://stalegjelsten.github.io/IT1/36-css-pseudoklasser)
+- [36-css-pseudoselektorer](https://stalegjelsten.github.io/IT1/36-css-pseudoselektorer)
