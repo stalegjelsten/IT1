@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="file:////Users/stale/.vscode/extensions/goessner.mdmath-2.7.4/themes/default/style.css"
+    />
+  </head>
+  <body class="markdown-body">
+    <h1 dir="auto" id="test-av-pseudoklasser">Test av pseudoklasser</h1>
+    <p dir="auto">
+      På <a href="pseudoklasse-sitatblokk.html">denne nettsiden</a> tester jeg
+      pseudoklassen <code>::after</code> i en sitatblokk
+      (<code>blockqote</code>).
+    </p>
+    <p dir="auto">
+      Jeg har gitt sitatblokken en selvvalg attributt i HTML-koden:
+      <code>name</code>. <code>name</code> er navnet på personen som har
+      opphavet til sitatet.
+    </p>
+    <p dir="auto">
+      For å automatisk legge til navnet på opphavspersonen etter sitatet (og få
+      fine anførseltegn rundt sitatet) så brukte jeg følgende CSS-kode.
+    </p>
+    <pre><code class="code-line language-css" dir="auto"><div><span class="hljs-selector-tag">blockquote</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;«&quot;</span>;
+}
+<span class="hljs-selector-tag">blockquote</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;» \a — &quot;</span><span class="hljs-built_in">attr</span>(name);
+  <span class="hljs-attribute">white-space</span>: pre;
+  <span class="hljs-attribute">font-style</span>: italic;
+}
+</div></code></pre>
+    <p dir="auto">
+      <code>blockquote::before</code> gjelder rett før
+      <code>blockquote</code> elementet, og vi ber CSS om å sette inn et
+      anførselstegn for å starte sitatet.
+    </p>
+    <p dir="auto">
+      I <code>blockquote::after</code> så gjør vi noen flere interessante saker.
+    </p>
+    <ul dir="auto">
+      <li dir="auto">
+        <code>\a</code> er kode for å legge til et linjeskift i tekst
+      </li>
+      <li dir="auto">
+        <code>attr(name)</code> gir beskjed om at vi skal sette inn verdien fra
+        attributten <code>name</code> som vi har definert i HTML-koden. Legg
+        merke til at dette står utenfor hermetegnene.
+      </li>
+      <li dir="auto">
+        <code>white-space: pre;</code> gjør at nettleseren kommer til å ta
+        hensyn til <code>\a</code>. Uten å definere denne så vil
+        <code>\a</code> bare vises teksten <code>\a</code> i nettleseren.
+      </li>
+      <li dir="auto">Vi setter også teksten til å være kursiv</li>
+    </ul>
+  </body>
+</html>

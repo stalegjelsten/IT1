@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two way flex</title>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: column;
+      }
+      #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      div {
+        border: 1px solid red;
+        padding: 2px;
+      }
+      div.boks1 {
+        flex: 1;
+      }
+      div.boks2 {
+        flex: 1;
+      }
+      div.boks3 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>Overskrifter</div>
+      <div id="main">
+        <div class="boks1">venstremeny</div>
+        <div class="boks2">innhold</div>
+        <div class="boks3">høyremeny</div>
+      </div>
+      <div>bunn</div>
+    </div>
+  </body>
+</html>
