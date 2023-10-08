@@ -9,3 +9,4 @@ Bruk lenkene nedenfor for å se hvordan de ferdige nettsidene ser ut.
 - [36-css](https://stalegjelsten.github.io/IT1/36-css)
 - [36-css-bilder](https://stalegjelsten.github.io/IT1/36-css-bilder)
 - [36-css-pseudoselektorer](https://stalegjelsten.github.io/IT1/36-css-pseudoselektorer)
+- [37-selektorer](https://stalegjelsten.github.io/IT1/37-selektorer)

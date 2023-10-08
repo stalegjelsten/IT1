@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stil.css" />
+    <title>Demo av forskjellen på piksler og rem</title>
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      body > div {
+        width: 80vw;
+      }
+      div {
+        border: 2px solid darkmagenta;
+        margin: 10px;
+        font-size: 16px;
+      }
+      .pixelStorrelse {
+        font-size: 11px;
+      }
+      .remStorrelse {
+        font-size: 2rem;
+      }
+      .emStorrelse {
+        font-size: 2em;
+      }
+      .halvBredde {
+        width: 50%;
+      }
+      .bestemtHoyde {
+        min-height: 40vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      I denne boksen er skriftstørrelsen satt til 16px.
+      <div class="pixelStorrelse">
+        I denne boksen er skriftstørrelsen definert med piksler. Piksler er en
+        absolutt lengdeenhet.
+      </div>
+      <div class="remStorrelse bestemtHoyde">
+        I denne boksen har skriften definert størrelsen med rem. 1rem = bredden
+        av bokstaven m i skriftstørrelsen definert i html-elementet.
+      </div>
+      <div class="emStorrelse halvBredde">
+        I denne boksen er skriftstørrelsen definert med em. 1em = bredden av
+        bokstaven m i skriftstørrelsen definert av foreldreelementet.
+      </div>
+    </div>
+  </body>
+</html>
