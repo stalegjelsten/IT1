@@ -10,3 +10,4 @@ Bruk lenkene nedenfor for å se hvordan de ferdige nettsidene ser ut.
 - [36-css-bilder](https://stalegjelsten.github.io/IT1/36-css-bilder)
 - [36-css-pseudoselektorer](https://stalegjelsten.github.io/IT1/36-css-pseudoselektorer)
 - [37-selektorer](https://stalegjelsten.github.io/IT1/37-selektorer)
+- [41-pixler-vs-rem-demo](https://stalegjelsten.github.io/IT1/41-enheter-og-storrelser/41-pixler-vs-rem)
