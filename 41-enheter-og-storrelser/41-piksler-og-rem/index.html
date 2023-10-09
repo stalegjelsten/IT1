@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forskjellen på piksler og rem</title>
+    <style>
+        html {
+            font-size: 162%;
+        }
+
+        div {
+            border: 0.5rem solid darkmagenta;
+            margin: 5px;
+            font-size: 25px;
+        }
+
+        .pikselStorrelse {
+            font-size: 20px;
+        }
+
+        .remStorrelse {
+            font-size: 2rem;
+        }
+
+        .emStorrelse {
+            font-size: 2em;
+        }
+
+        .halvbredde {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    div.*3
+    <div class="container">
+        Sett en skriftstørrelse for hver boks. Den øverste skal bruke piksler, den andre skal bruke rem og den nederste
+        skal bruke em.
+        <div class="pikselStorrelse halvbredde">Denne boksen bruker piksler</div>
+        <div class="remStorrelse">Denne boksen bruker rem</div>
+        <div class="emStorrelse halvbredde">Denne boksen bruker em</div>
+    </div>
+</body>
+
+</html>
