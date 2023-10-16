@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Næringskjede</title>
+    <style>
+      section {
+        display: flex;
+        background-color: green;
+        min-height: 5rem;
+        gap: 1rem;
+        padding: 1rem;
+        font-size: 30px;
+        margin: 1rem auto;
+      }
+      div.art {
+        background-color: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+      .kolonne {
+        flex-direction: column;
+        font-size: 50px;
+        background-color: yellow;
+      }
+      .omvendtKolonne {
+        flex-direction: column-reverse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Næringskjede</h1>
+    <section class="container">
+      <div class="art">Gress</div>
+      <div class="art">Gresshopper</div>
+      <div class="art">Spurv</div>
+      <div class="art">Slange</div>
+    </section>
+    <section class="container kolonne">
+      <div class="art">Gress</div>
+      <div class="art">Gresshopper</div>
+      <div class="art">Spurv</div>
+      <div class="art">Slange</div>
+    </section>
+    <section class="container kolonne omvendtKolonne">
+      <div class="art">Gress</div>
+      <div class="art">Gresshopper</div>
+      <div class="art">Spurv</div>
+      <div class="art">Slange</div>
+    </section>
+  </body>
+</html>

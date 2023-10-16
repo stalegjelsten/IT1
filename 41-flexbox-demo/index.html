@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox demo</title>
-    <style>
-      html {
-        font-size: 162%;
-        font-weight: bold;
-      }
-      div {
-        border: 0.3rem solid darkmagenta;
-        margin: 0.05rem;
-        padding: 0.2rem;
-      }
-      div.container {
-        min-height: 5rem;
-      }
-      div.boks {
-        text-align: center;
-        background-color: rgba(0, 255, 0, 0.12);
-        border: 0.2rem solid green;
-        /* min-width: 7rem; */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="boks">item 1</div>
-      <div class="boks">item 2</div>
-      <div class="boks">item 3</div>
-      <div class="boks">item 4</div>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox demo</title>
+  <style>
+    html {
+      font-size: 162%;
+      font-weight: bold;
+    }
+
+    html {
+      font-size: 162%;
+      font-family: Rubik, sans-serif;
+    }
+
+    div {
+      border: 0.3rem solid darkmagenta;
+      margin: 0.2rem;
+      padding: 0.2rem;
+    }
+
+    div.boks {
+      text-align: center;
+      background-color: rgba(0, 255, 0, 0.12);
+      border: 0.1rem solid green;
+      /* min-width: 7rem; */
+    }
+
+    div.container1 {
+      display: flex;
+    }
+
+    div.container2 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    div.container3 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    div.alltidForst {
+      order: -1;
+    }
+
+    div.alltidSist {
+      order: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="boks">boks 0-1</div>
+    <div class="boks">boks 0-2</div>
+    <div class="boks">boks 0-3</div>
+    <div class="boks">boks 0-4</div>
+  </div>
+
+  <div class="container1">
+    <div class="boks">boks 1-1</div>
+    <div class="boks">boks 1-2</div>
+    <div class="boks">boks 1-3</div>
+    <div class="boks">boks 1-4</div>
+  </div>
+
+  <div class="container2">
+    <div class="boks">boks 2-1</div>
+    <div class="boks">boks 2-2</div>
+    <div class="boks">boks 2-3</div>
+    <div class="boks">boks 2-4</div>
+  </div>
+
+  <div class="container3">
+    <div class="boks">boks 3-1</div>
+    <div class="boks">boks 3-2</div>
+    <div class="boks">boks 3-3</div>
+    <div class="boks">boks 3-4</div>
+  </div>
+
+</body>
+
 </html>
