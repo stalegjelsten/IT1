@@ -1,0 +1,11 @@
+{
+    "presentation-mode.configBackup": {
+        "editor.fontWeight": 500,
+        "editor.fontSize": 22,
+        "editor.minimap.enabled": false,
+        "editor.scrollbar.verticalScrollbarSize": 0,
+        "workbench.activityBar.visible": false,
+        "workbench.statusBar.visible": false,
+        "workbench.colorTheme": "Noctis High Contrast"
+    },
+}

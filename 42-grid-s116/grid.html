@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 200%;
+            font-family: Menlo, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 30% 30% 30%;
+            grid-template-columns: repeat(3, 30%);
+            grid-row-gap: 12px;
+            grid-column-gap: 24px;
+            justify-content: center;
+        }
+
+        .container div {
+            outline: 0.1rem solid red;
+        }
+
+        .toKolonner {
+            grid-column: span 2;
+        }
+
+        .toRader {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="toKolonner toRader">Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+
+    </section>
+</body>
+
+</html>
