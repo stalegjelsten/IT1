@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 column layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto 1fr;
+            width: 90vw;
+            height: 80vh;
+            column-gap: 0.7rem;
+        }
+
+        div.vis {
+            height: 2rem;
+            border: 2px solid green;
+        }
+
+        nav,
+        main {
+            border: 2px solid red;
+            background-color: darksalmon;
+        }
+
+        nav {
+            grid-column: 2 / span 4
+        }
+
+        main {
+            grid-column: 6 / span 6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <div class="vis"></div>
+        <nav>nav</nav>
+        <main>main</main>
+    </div>
+</body>
+
+</html>
