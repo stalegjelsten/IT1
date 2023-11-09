@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 2</title>
+    <style>
+        article {
+            /* løsningsforslag som ikke er responsivt */
+            margin: 0 auto;
+            /* triks for å få boksen midtstilt, ikke nødvendig */
+            width: 10rem;
+            /* høyde og bredde må være satt med absolutt enhet */
+            height: 10rem;
+            border-radius: 1rem;
+            background-color: lightgreen;
+            font-size: 5rem;
+            display: flex;
+            /* display flex med center center er nødvendig */
+            justify-content: center;
+            align-items: center;
+        }
+
+        article.responsiv {
+            /* denne reposnsive løsningen bytter ut absolutte enheter med vw */
+            margin: 0 auto;
+            width: 40vw;
+            height: 40vw;
+            border-radius: 1rem;
+            background-color: lightgreen;
+            font-size: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <article>🦦</article>
+    <br />
+    <article class="responsiv">🦦</article>
+</body>
+
+</html>

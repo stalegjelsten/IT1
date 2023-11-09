@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 4</title>
+    <style>
+        .rutenett {
+            display: grid;
+            background: paleturquoise;
+            padding: 0.5rem;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        article {
+            min-height: 3rem;
+            background: darkturquoise;
+            border-radius: 0.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rutenett-flex {
+
+            display: flex;
+            gap: 1rem;
+            background-color: paleturquoise;
+            flex-wrap: wrap;
+            padding: 0.5rem;
+        }
+
+        .rutenett-flex>article {
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .uten-flex-verdi>article {
+            flex: none;
+            min-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Bruk av grid 👇</p>
+    <div class="rutenett">
+        <article>Boks 1</article>
+        <article>Boks 2</article>
+        <article>Boks 3</article>
+        <article>Boks 4</article>
+        <article>Boks 5</article>
+        <article>Boks 6</article>
+    </div>
+    <div class="innerste" style="text-align: center;"></div>
+    <p>Bruk av flex med flex: 1 👇</p>
+    <div class="rutenett-flex">
+        <article>Boks 1</article>
+        <article>Boks 2</article>
+        <article>Boks 3</article>
+        <article>Boks 4</article>
+        <article>Boks 5</article>
+        <article>Boks 6</article>
+    </div>
+    <p>Bruk av display: flex; uten bruk av flex: 1; 👇</p>
+    <div class="rutenett-flex uten-flex-verdi">
+        <article>Boks 1</article>
+        <article>Boks 2</article>
+        <article>Boks 3</article>
+        <article>Boks 4</article>
+        <article>Boks 5</article>
+        <article>Boks 6</article>
+    </div>
+
+</body>
+<script>
+    function displayWidth() {
+        const width = document.querySelector(".innerste").clientWidth;
+        document.querySelector(".innerste").innerHTML = "<p><i>Bredden av nettleservinduet er er " + width + "px</i></p>";
+    }
+    setInterval(displayWidth, 100);
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 1</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+        html {
+            /* disse er ikke nødvendige for å få full uttelling */
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Pacifico";
+        }
+
+        div.container {
+            /* nøvendig å bruke flex med space-between */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            background-color: darkgreen;
+            gap: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        article {
+            /* nødvendig å bruke flex for å sentrere teksten */
+            min-height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgreen;
+            border-radius: 0.5rem;
+            width: 6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article>Boks 1</article>
+        <article>Boks 2</article>
+        <article>Boks 3</article>
+    </div>
+</body>
+
+</html>
