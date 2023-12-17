@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid med 6 kolonner</title>
+    <style>
+        .rutenett {
+            display: grid;
+            background-color: paleturquoise;
+            padding: 0.5rem;
+            gap: 0.5rem;
+            /* grid-template-columns: repeat(auto-fit, minmax(max(100px, 14vw), 1fr)); */
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 2fr);
+        }
+
+        article {
+            min-height: 20vh;
+            background-color: darkturquoise;
+            border-radius: 0.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .to-kolonner {
+            grid-column: span 2;
+        }
+
+        .tre-kolonner {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rutenett">
+        <article class="to-rader tre-kolonner">1</article>
+        <article class="to-rader">2</article>
+        <article class="to-kolonner">3</article>
+        <article class="to-kolonner">4</article>
+    </div>
+    <div class="innerste" style="text-align: center;"></div>
+</body>
+<script>
+    function displayWidth() {
+        const width = document.querySelector(".innerste").clientWidth;
+        document.querySelector(".innerste").innerHTML = "<p><i>Bredden av nettleservinduet er er " + width + "px</i></p>";
+    }
+    setInterval(displayWidth, 100);
+</script>
+
+</html>
